@@ -9,7 +9,7 @@ All notable changes to `MsGraph` will be documented in this file.
 
 ## Version 1.1.0
 - added 2 traits
-	- Emails - methods for listing emails and attachments and sending, replying and forwarding 
+	- Emails - methods for listing emails and attachments and sending, replying and forwarding
 	- Contacts - List all contacts
 	- fixed migration name and path
 
@@ -53,7 +53,7 @@ Renamed all methods to be action followed by name ie `getEmails`
 
 ## Version 1.1.5
 
-Renamed repo to daveismyname/laravel-msgraph
+Renamed repo to perfect-oblivion/laravel-msgraph
 
 ## Version 1.2.0
 
@@ -67,6 +67,11 @@ Added ability to login as a tenant by using MsGraphAdmin
 
 ## Version 2.0.0
 
-Renamed repo to daveismyname/laravel-microsoft-graph
+Renamed repo to perfect-oblivion/laravel-microsoft-graph
 Added tenency support
 Removed traits and added classes in resources instead
+
+## Version 2.0.1
+
+Forked from [perfect-oblivion/laravel-microsoft-graph](https://github.com/perfect-oblivion/laravel-microsoft-graph)
+Updated league/oauth2 dependency to version 2.0

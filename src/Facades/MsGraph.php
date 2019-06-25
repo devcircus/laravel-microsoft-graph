@@ -1,6 +1,6 @@
 <?php
 
-namespace Daveismyname\MsGraph\Facades;
+namespace PerfectOblivion\MsGraph\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

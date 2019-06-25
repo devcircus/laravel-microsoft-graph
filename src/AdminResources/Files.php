@@ -1,8 +1,8 @@
 <?php
 
-namespace Daveismyname\MsGraph\AdminResources;
+namespace PerfectOblivion\MsGraph\AdminResources;
 
-use Daveismyname\MsGraph\Facades\MsGraphAdmin;
+use PerfectOblivion\MsGraph\Facades\MsGraphAdmin;
 use Exception;
 
 class Files extends MsGraphAdmin

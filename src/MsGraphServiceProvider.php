@@ -1,9 +1,9 @@
 <?php
 
-namespace Daveismyname\MsGraph;
+namespace PerfectOblivion\MsGraph;
 
 use Illuminate\Support\ServiceProvider;
-use Daveismyname\MsGraph\MsGraphAuthenticated;
+use PerfectOblivion\MsGraph\MsGraphAuthenticated;
 
 class MsGraphServiceProvider extends ServiceProvider
 {
@@ -28,7 +28,7 @@ class MsGraphServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__.'/database/migrations/create_ms_graph_tokens_table.php' => $this->app->databasePath()."/migrations/{$timestamp}_create_ms_graph_tokens_table.php",
-            ], 'migrations');            
+            ], 'migrations');
         }
 
         //add middleware

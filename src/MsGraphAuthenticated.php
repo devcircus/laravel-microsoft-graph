@@ -1,9 +1,9 @@
 <?php
 
-namespace Daveismyname\MsGraph;
+namespace PerfectOblivion\MsGraph;
 
 use Closure;
-use Daveismyname\MsGraph\Facades\MsGraph;
+use PerfectOblivion\MsGraph\Facades\MsGraph;
 
 class MsGraphAuthenticated
 {

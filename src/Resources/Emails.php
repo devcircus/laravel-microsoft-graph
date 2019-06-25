@@ -1,8 +1,8 @@
 <?php
 
-namespace Daveismyname\MsGraph\Resources;
+namespace PerfectOblivion\MsGraph\Resources;
 
-use Daveismyname\MsGraph\Facades\MsGraph;
+use PerfectOblivion\MsGraph\Facades\MsGraph;
 use Exception;
 
 class Emails extends MsGraph
@@ -206,7 +206,7 @@ class Emails extends MsGraph
 
     protected function prepareEmail()
     {
-        $subject = $this->subject; 
+        $subject = $this->subject;
         $body = $this->body;
         $comment = $this->comment;
         $to = $this->to;
@@ -239,7 +239,7 @@ class Emails extends MsGraph
         if ($attachments != null) {
             foreach($attachments as $file) {
                 $path = pathinfo($file);
-                
+
                 $attachmentarray[] = [
                     '@odata.type' => '#microsoft.graph.fileAttachment',
                     'name' => $path['basename'],
@@ -255,7 +255,7 @@ class Emails extends MsGraph
         }
         if ($body != null) {
             $envelope['message']['body'] = [
-                'contentType' => 'html', 
+                'contentType' => 'html',
                 'content' => $body
             ];
         }

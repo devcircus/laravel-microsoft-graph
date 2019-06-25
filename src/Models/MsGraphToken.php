@@ -1,6 +1,6 @@
 <?php
 
-namespace Daveismyname\MsGraph\Models;
+namespace PerfectOblivion\MsGraph\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
