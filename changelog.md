@@ -71,7 +71,7 @@ Renamed repo to perfect-oblivion/laravel-microsoft-graph
 Added tenency support
 Removed traits and added classes in resources instead
 
-## Version 2.0.1
+## Version 3.0.0
 
 Forked from [perfect-oblivion/laravel-microsoft-graph](https://github.com/perfect-oblivion/laravel-microsoft-graph)
 Updated league/oauth2 dependency to version 2.0

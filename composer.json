@@ -1,7 +1,7 @@
 {
     "name": "perfect-oblivion/laravel-microsoft-graph",
     "description": "A Laravel Microsoft Graph API (Office365) package",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "license": "MIT",
     "authors": [
         {
