@@ -1,18 +1,18 @@
 <?php
 
-namespace Daveismyname\MsGraph;
+namespace PerfectOblivion\MsGraph;
 
 /**
 * msgraph api documenation can be found at https://developer.msgraph.com/reference
 **/
 
-use Daveismyname\MsGraph\Facades\MsGraph as Api;
-use Daveismyname\MsGraph\Models\MsGraphToken;
+use PerfectOblivion\MsGraph\Facades\MsGraph as Api;
+use PerfectOblivion\MsGraph\Models\MsGraphToken;
 
-use Daveismyname\MsGraph\Resources\Contacts;
-use Daveismyname\MsGraph\Resources\Emails;
-use Daveismyname\MsGraph\Resources\Files;
-use Daveismyname\MsGraph\Resources\Tasks;
+use PerfectOblivion\MsGraph\Resources\Contacts;
+use PerfectOblivion\MsGraph\Resources\Emails;
+use PerfectOblivion\MsGraph\Resources\Files;
+use PerfectOblivion\MsGraph\Resources\Tasks;
 
 use League\OAuth2\Client\Provider\GenericProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
@@ -34,7 +34,7 @@ class MsGraph
     public function files()
     {
         return new Files();
-    }  
+    }
 
     public function tasks()
     {
@@ -247,7 +247,7 @@ class MsGraph
         {
             dd($data);
         }
-        
+
         $total = isset($data['@odata.count']) ? $data['@odata.count'] : 0;
 
         if (isset($data['@odata.nextLink'])) {

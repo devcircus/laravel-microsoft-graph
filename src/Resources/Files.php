@@ -1,8 +1,8 @@
 <?php
 
-namespace Daveismyname\MsGraph\Resources;
+namespace PerfectOblivion\MsGraph\Resources;
 
-use Daveismyname\MsGraph\Facades\MsGraph;
+use PerfectOblivion\MsGraph\Facades\MsGraph;
 use Exception;
 
 class Files extends MsGraph

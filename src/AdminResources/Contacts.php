@@ -1,8 +1,8 @@
 <?php
 
-namespace Daveismyname\MsGraph\AdminResources;
+namespace PerfectOblivion\MsGraph\AdminResources;
 
-use Daveismyname\MsGraph\Facades\MsGraphAdmin;
+use PerfectOblivion\MsGraph\Facades\MsGraphAdmin;
 use Exception;
 
 class Contacts extends MsGraphAdmin
@@ -49,7 +49,7 @@ class Contacts extends MsGraphAdmin
 
         } else {
             $params = http_build_query($params);
-        }   
+        }
 
         $contacts = MsGraphAdmin::get('users/'.$this->userId.'/contacts?'.$params);
 

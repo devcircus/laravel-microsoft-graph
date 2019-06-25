@@ -1,8 +1,8 @@
 <?php
 
-namespace Daveismyname\MsGraph\AdminResources;
+namespace PerfectOblivion\MsGraph\AdminResources;
 
-use Daveismyname\MsGraph\Facades\MsGraphAdmin;
+use PerfectOblivion\MsGraph\Facades\MsGraphAdmin;
 use Exception;
 
 class Emails extends MsGraphAdmin
@@ -230,7 +230,7 @@ class Emails extends MsGraphAdmin
 
     protected function prepareEmail()
     {
-        $subject = $this->subject; 
+        $subject = $this->subject;
         $body = $this->body;
         $comment = $this->comment;
         $to = $this->to;
@@ -263,7 +263,7 @@ class Emails extends MsGraphAdmin
         if ($attachments != null) {
             foreach($attachments as $file) {
                 $path = pathinfo($file);
-                
+
                 $attachmentarray[] = [
                     '@odata.type' => '#microsoft.graph.fileAttachment',
                     'name' => $path['basename'],
@@ -279,7 +279,7 @@ class Emails extends MsGraphAdmin
         }
         if ($body != null) {
             $envelope['message']['body'] = [
-                'contentType' => 'html', 
+                'contentType' => 'html',
                 'content' => $body
             ];
         }

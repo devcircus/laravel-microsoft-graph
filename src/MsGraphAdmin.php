@@ -1,15 +1,15 @@
 <?php
 
-namespace Daveismyname\MsGraph;
+namespace PerfectOblivion\MsGraph;
 
 /**
 * msgraph api documenation can be found at https://developer.msgraph.com/reference
 **/
 
-use Daveismyname\MsGraph\Models\MsGraphToken;
+use PerfectOblivion\MsGraph\Models\MsGraphToken;
 
-use Daveismyname\MsGraph\AdminResources\Contacts;
-use Daveismyname\MsGraph\AdminResources\Emails;
+use PerfectOblivion\MsGraph\AdminResources\Contacts;
+use PerfectOblivion\MsGraph\AdminResources\Emails;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Exception;
@@ -69,10 +69,10 @@ class MsGraphAdmin
             return redirect()->away($url);
 
         } elseif (request()->has('tenant')) {
-            
+
             // With the authorization code, we can retrieve access tokens and other data.
             try {
-                
+
                 $params = [
                     'scope' => 'https://graph.microsoft.com/.default',
                     'client_id' => config('msgraph.clientId'),
@@ -227,7 +227,7 @@ class MsGraphAdmin
         {
             dd($data);
         }
-        
+
         $total = isset($data['@odata.count']) ? $data['@odata.count'] : 0;
 
         if (isset($data['@odata.nextLink'])) {

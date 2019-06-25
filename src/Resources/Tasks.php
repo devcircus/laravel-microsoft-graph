@@ -1,8 +1,8 @@
 <?php
 
-namespace Daveismyname\MsGraph\Resources;
+namespace PerfectOblivion\MsGraph\Resources;
 
-use Daveismyname\MsGraph\Facades\MsGraph;
+use PerfectOblivion\MsGraph\Facades\MsGraph;
 use Exception;
 
 class Tasks extends MsGraph
@@ -38,7 +38,7 @@ class Tasks extends MsGraph
 
         } else {
            $params = http_build_query($params);
-        }   
+        }
 
         $tasks = MsGraph::get('me/messages?'.$params);
 

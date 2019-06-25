@@ -1,34 +1,40 @@
 {
-    "name": "daveismyname/laravel-microsoft-graph",
+    "name": "perfect-oblivion/laravel-microsoft-graph",
     "description": "A Laravel Microsoft Graph API (Office365) package",
+    "version": "2.0.1",
     "license": "MIT",
     "authors": [
         {
             "name": "David Carr",
             "email": "dave@daveismyname.com",
             "homepage": "https://daveismyname.blog"
+        },
+        {
+            "name": "Clayton Stone",
+            "email": "clay@perfectoblivion.com",
+            "homepage": "https://perfectoblivion.com"
         }
     ],
-    "homepage": "https://github.com/daveismyname/laravel-microsoft-graph",
+    "homepage": "https://github.com/perfect-oblivion/laravel-microsoft-graph",
     "keywords": ["Laravel", "MsGraph", "Graph", "Microsoft Graph", "Office365"],
     "require": {
-        "illuminate/support": "~5",
-        "league/oauth2-client": "^1.4",
-        "guzzlehttp/guzzle": "^6"
+        "illuminate/support": "5.8.*",
+        "league/oauth2-client": "^2.0",
+        "guzzlehttp/guzzle": "^6.0"
     },
     "autoload": {
         "psr-4": {
-            "Daveismyname\\MsGraph\\": "src/"
+            "PerfectOblivion\\MsGraph\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Daveismyname\\MsGraph\\MsGraphServiceProvider"
+                "PerfectOblivion\\MsGraph\\MsGraphServiceProvider"
             ],
             "aliases": {
-                "MsGraph": "Daveismyname\\MsGraph\\Facades\\MsGraph",
-                "MsGraphAdmin": "Daveismyname\\MsGraph\\Facades\\MsGraphAdmin"
+                "MsGraph": "PerfectOblivion\\MsGraph\\Facades\\MsGraph",
+                "MsGraphAdmin": "PerfectOblivion\\MsGraph\\Facades\\MsGraphAdmin"
             }
         }
     }

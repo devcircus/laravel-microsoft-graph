@@ -1,7 +1,8 @@
 
-# Microsoft Graph
+# A Laravel Microsoft Graph API (Office365) package
 
 A Laravel package for working with Microsoft Graph API.
+> This package is forked from daveismyname/laravel-microsoft-graph. All code credit to David Carr through version 2.0.0.
 
 MsGraph comes in two flavours:
 
@@ -10,8 +11,8 @@ MsGraph comes in two flavours:
 
 API documentation can be found at https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/beta-overview
 
-# Full documentation and install instructions 
-[https://docs.daveismyname.blog/laravel-microsoft-graph](https://docs.daveismyname.blog/laravel-microsoft-graph)
+# Full documentation and install instructions
+// TODO
 
 ## Usage for MsGraph
 
@@ -151,7 +152,7 @@ Contributions are accepted via Pull Requests on [Github][4].
 
 ## Security
 
-If you discover any security related issues, please email dave@daveismyname.com email instead of using the issue tracker.
+If you discover any security related issues, please email clay@perfectoblivion.com instead of using the issue tracker.
 
 ## License
 
@@ -159,6 +160,6 @@ license. Please see the [license file][6] for more information.
 
 [2]:    https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview
 [3]:    changelog.md
-[4]:    https://github.com/daveismyname/laravel-microsoft-graph
+[4]:    https://github.com/perfect-oblivion/laravel-microsoft-graph
 [5]:    http://semver.org/
 [6]:    license.md
